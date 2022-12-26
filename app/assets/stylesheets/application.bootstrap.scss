@@ -1,7 +1,28 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
 @import "jumpstart/announcements";
+// Mixins
+@import "mixins/media";
 
+// Configuration
+@import "config/variables";
+@import "config/reset";
+
+// Components
+@import "components/btn";
+@import "components/form";
+@import "components/visually_hidden";
+@import "components/quote";
+@import "components/turbo_progress_bar";
+
+// Layouts
+@import "layouts/container";
+@import "layouts/header";
+
+
+main {
+    background-color: #FCFAF7;
+}
 h2 {
         font-size: 1.5rem;
         font-weight: 700;
