@@ -1,0 +1,12 @@
+<%= form_with model: quote do |form| %> 
+    <% if quote.errors.any? %>
+    <div class="error-message">
+    <%= quote.errors.full_messages.to_sentence.capitalize %>
+    </div>
+    <% end %>
+
+    <div class="form-group">
+    <%= form.text_field :name, class: "form-control form-control-lg", placeholder: "Creative Quote..." %>
+    <%= form.submit class: "btn btn-primary mt-3" %>
+    <% end %>
+

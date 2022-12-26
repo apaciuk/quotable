@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: announcements
+#
+#  id                :uuid             not null, primary key
+#  announcement_type :string
+#  description       :text
+#  name              :string
+#  published_at      :datetime
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#
 FactoryBot.define do
   factory :announcement do
     published_at { "2022-12-26 17:58:42" }
