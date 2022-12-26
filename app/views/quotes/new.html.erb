@@ -8,6 +8,7 @@
 <div class="header mt-3 mb-3">
     <h2>New Quote</h2>
 </div>
-
+ <%= turbo_frame_tag "first_turbo_frame" do %>
  <%= render "form", quote: @quote %>
+ <% end %>
 </main>
