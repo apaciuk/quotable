@@ -3,7 +3,7 @@
     <div class="center">
      <h1 class="display-6">
    <span class="badge bg-info" ><%= link_to image_tag('icon.png', size: 50), root_path, class: 'icon' %>Quotable!</span></h1>
-   <p class="lead mt-3">A blazing fast quote editor built with Ruby on Rails, Hotwire, Turbo, and Stimulus</p>
+   <p class="lead mt-3">A Blazing Fast Quote Editor Built With Ruby On Rails, Hotwire, Turbo Frames, And Stimulus</p>
   
      </div>
    </div>
@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row text-dark">
      <% if user_signed_in? %>
-    <%= link_to "View quotes", quotes_path, class: "btn btn-dark btn-lg" %>
+    <%= link_to "View Quotes", quotes_path, class: "btn btn-dark btn-lg" %>
   <% else %>
     <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-dark btn-lg" %>
   <% end %>

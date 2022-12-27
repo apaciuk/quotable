@@ -1,0 +1,12 @@
+<div class="empty-state empty-state--only-child">
+<p class="empty-state__text mt-1">
+    You Don't Have Any Quotes Yet!<br />
+    Get Started By Creating A New Quote!
+</p>
+
+<%= link_to "Add First Quote",
+            new_quote_path,
+            class: "btn btn-dark mb-2 mt-1",
+            data: { turbo_frame: dom_id(Quote.new) } %>
+</div>
+
