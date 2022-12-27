@@ -6,7 +6,6 @@
 
 // Configuration
 @import "config/variables";
-@import "config/reset";
 
 // Components
 @import "components/btnn";
@@ -30,4 +29,10 @@ h2 {
         text-transform: uppercase;
         color: darkslateblue;
 
+}
+
+.quote a {
+    font-weight: 500;
+    color: darkslateblue;
+    text-decoration: none;
 }
