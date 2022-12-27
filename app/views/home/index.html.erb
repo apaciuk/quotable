@@ -14,7 +14,7 @@
      <% if user_signed_in? %>
     <%= link_to "View quotes", quotes_path, class: "btn btn-dark btn-lg" %>
   <% else %>
-    <%= link_to "Sign in", new_user_session_path, class: "btn btn-dark btn-lg" %>
+    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-dark btn-lg" %>
   <% end %>
     </div>
   </div>
