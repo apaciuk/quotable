@@ -10,6 +10,10 @@ rails db:migrate
 rails db:seed
 bin/dev
 
+Sign up for account.
+
+View and create quotes
+
 Jumpstart Custom is a Rails template, so you pass it in as an option when creating a new app.
 
 #### Requirements
