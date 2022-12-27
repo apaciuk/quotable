@@ -1,7 +1,7 @@
 databases:
   - name: quotable
     databaseName: quotable
-    user: postgres
+    user: xhostcom
 
 services:
   - type: web
