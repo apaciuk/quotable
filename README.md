@@ -1,6 +1,14 @@
-# jumpstart-custom
+# quotable
+
+* Quote app with UUIDs, turbo frames, hotwire, turbo broadcast for stateless changes in UI.
 
 ## Getting Started
+
+bundle install && yarn
+rails db:create
+rails db:migrate
+rails db:seed
+bin/dev
 
 Jumpstart Custom is a Rails template, so you pass it in as an option when creating a new app.
 
