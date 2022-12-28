@@ -1,0 +1,13 @@
+<%= form_with model: [quote, line_item_date], html: { class: "form line-item-date" } do |form| %>
+    <% if line_item_date.errors.any? %>
+    <div class="error-message">
+    <%= line_item_date.errors.full_messages.to_sentence.capitalize %>
+    </div>
+<% end %>
+
+    <div class="form-group">
+    <%= form.date_field :date, html5: true, input_html: { autofocus: true } class: "form-control" %>
+    <%= link_to "Cancel", quote_path(quote), class: "btnn btnn--light" %>
+    <%= form.submit class: "btnn btnn--secondary" %>
+    </div>
+<% end %>
