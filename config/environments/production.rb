@@ -5,8 +5,8 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-  if ENV["REDISCLOUD_URL"]
-    uri = URI.parse(ENV["REDISCLOUD_URL"])
+  if ENV["REDIS_URL"]
+    uri = URI.parse(ENV["REDIS_URL"])
     $redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
   end
   # Eager load code on boot. This eager loads most of Rails and
